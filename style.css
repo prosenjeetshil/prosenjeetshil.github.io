@@ -387,6 +387,7 @@ article .icon {
 
 #projects {
   padding: 40px;
+  position: relative;
 }
 
 #projects .section__text__p1 {
@@ -567,14 +568,11 @@ header {
 /* FOOTER SECTION */
 
 footer {
-  height: 100px;
+  height: 26vh;
   margin: 0 1rem;
-  /* position: fixed; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 footer p {
   text-align: center;
+  padding: 1rem
 }
