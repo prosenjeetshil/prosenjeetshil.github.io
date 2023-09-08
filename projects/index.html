@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Prosenjeet Shil</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <!-- <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li> -->
+          <!--edit -->
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Prosenjeet Shil</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/" onclick="toggleMenu()">Home</a></li>
+          <!-- <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li> -->
+          <!--edit -->
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <!-- <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> -->
+        </div>
+      </div>
+    </nav>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MyReads Udacity</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">
+                <a
+                  href="https://github.com/prosenjeetshil/MyReads-Udacity"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+              <button class="btn btn-color-2 project-btn">
+                <a id="readproject" href="/projects/my-reads/">Read More</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Employee Polls Udacity
+            </h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">
+                <a
+                  href="https://github.com/prosenjeetshil/Employee-Polls-Udacity"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+              <button class="btn btn-color-2 project-btn">
+                <a id="readproject" href="/projects/employee-poll/"
+                  >Read More</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              React CRUD Library-Management-System
+            </h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">
+                <a
+                  href="https://github.com/prosenjeetshil/React-CRUD-Library-Management-System"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+              <button class="btn btn-color-2 project-btn">
+                <a id="readproject" href="/projects/react-crud-lms/"
+                  >Read More</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2023 Prosenjeet Shil. All Rights Reserved.</p>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
