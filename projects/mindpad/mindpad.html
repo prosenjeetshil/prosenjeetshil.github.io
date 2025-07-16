@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/">Prosenjeet Shil</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="../">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Prosenjeet Shil</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/" onclick="toggleMenu()">Home</a></li>
+          <li><a href="../" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1>MindPad - A Full-Stack MERN Note-Taking App</h1>
+    </header>
+
+    <section id="project-details">
+      <div class="project-description">
+        <h2>Description:</h2>
+        <p>
+          MindPad is a full-stack note-taking application built using the MERN
+          stack. It enables users to create, read, update, and delete notes
+          with a responsive UI powered by Tailwind CSS and DaisyUI. The project
+          also features toast notifications for better UX and rate limiting via
+          Upstash Redis for API protection.
+        </p>
+      </div>
+      <br />
+      <div class="project-image">
+        <img src="/assets/mindpad/home.png" alt="MindPad Project Home" />
+        <img src="/assets/mindpad/create.png" alt="MindPad Project create" />
+        <img src="/assets/mindpad/toast.png" alt="MindPad Project toast" />
+      </div>
+
+      <div class="project-technologies">
+        <h2>Technologies Used:</h2>
+        <ul>
+          <li>React (Vite)</li>
+          <li>React Router</li>
+          <li>Tailwind CSS</li>
+          <li>DaisyUI</li>
+          <li>react-hot-toast</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB + Mongoose</li>
+          <li>Upstash Redis</li>
+          <li>dotenv</li>
+        </ul>
+      </div>
+
+      <div class="project-links">
+        <button class="btn btn-primary">
+          <a
+            href="https://mern-mindpad.onrender.com/"
+            target="_blank"
+            >Live Project</a>
+        </button>
+        <button class="btn btn-secondary">
+          <a
+            href="https://github.com/prosenjeetshil/MindPad"
+            target="_blank"
+            >GitHub Repo</a>
+        </button>
+      </div>
+
+      <div class="project-learning">
+        <h2>Project Learnings:</h2>
+        <p>
+          Full-Stack MERN Development, RESTful API design, State Management,
+          Tailwind + DaisyUI, Toast UX handling, MVC pattern, Redis integration.
+        </p>
+      </div>
+
+      <div class="project-challenges">
+        <h2>Project Challenges:</h2>
+        <p>
+          Backend rate limiting, real-time toast feedback, scalable code
+          structure, integrating frontend and backend seamlessly.
+        </p>
+      </div>
+
+      <div class="project-future">
+        <h2>Future Improvements:</h2>
+        <ul>
+          <li>User Authentication (JWT, OAuth)</li>
+          <li>Note categories and tags</li>
+          <li>Dark/Light theme toggle</li>
+          <li>Multi-user support with saved notes</li>
+          <li>Deployment with Render / Vercel / Netlify</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <!-- <p>Copyright &#169; 2025 Prosenjeet Shil. All Rights Reserved.</p> -->
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

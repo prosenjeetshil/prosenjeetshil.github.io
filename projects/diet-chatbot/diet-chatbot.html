@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/">Prosenjeet Shil</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="../">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Prosenjeet Shil</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/" onclick="toggleMenu()">Home</a></li>
+          <li><a href="../" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Personal Diet Advisor Chatbot</h1>
+    </header>
+
+    <section id="project-details">
+      <div class="project-description">
+        <h2>Description:</h2>
+        <p>
+          The Personal Diet Advisor Chatbot is an AI-powered chatbot developed
+          using Chatbot Kit, Next.js, and the OpenAI API. It assists users by
+          providing intelligent diet-related advice and suggestions based on
+          user input and queries.
+        </p>
+      </div>
+      <br />
+      <div class="project-image">
+        <img src="/assets/diet-chatbot/chatbot.png" alt="Chatbot Project Image" />
+        <img src="/assets/diet-chatbot/recipes.png" alt="Chatbot Project Image" />
+      </div>
+      <div class="project-technologies">
+        <h2>Technologies Used:</h2>
+        <ul>
+          <li>Next.js</li>
+          <li>Chatbot Kit</li>
+          <li>OpenAI API (GPT-3)</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+
+      <div class="project-links">
+        <button class="btn btn-primary">
+          <a
+            href="https://personal-diet-advisor-chatbot.vercel.app/"
+            target="_blank"
+            >Live Project</a>
+        </button>
+        <button class="btn btn-secondary">
+          <a
+            href="https://github.com/prosenjeetshil/personal-diet-chatbot"
+            target="_blank"
+            >GitHub Repo</a>
+        </button>
+      </div>
+
+      <div class="project-learning">
+        <h2>Project Learnings:</h2>
+        <p>
+          Working with the OpenAI API (GPT-3), chatbot interaction design,
+          asynchronous handling in Next.js, Chatbot Kit integration, and
+          enhancing UX through conversational AI.
+        </p>
+      </div>
+
+      <div class="project-challenges">
+        <h2>Project Challenges:</h2>
+        <p>
+          Prompt engineering, API token handling, ensuring accurate dietary
+          advice, response latency, and maintaining natural conversation flow.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <!-- <p>Copyright &#169; 2025 Prosenjeet Shil. All Rights Reserved.</p> -->
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
